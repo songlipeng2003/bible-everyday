@@ -7,12 +7,14 @@
 //
 
 #import "BEAppDelegate.h"
+#import "MobClick.h"
 
 @implementation BEAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [MobClick startWithAppkey:@"53d11ad856240bec340f2b80" reportPolicy:BATCH channelId:@""];
+    
     return YES;
 }
 
