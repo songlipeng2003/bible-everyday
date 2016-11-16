@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A2560B7568A48679D26A40E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6470E8EC74E241B8A0A64FC4 /* libPods.a */; };
+		96D241BC1982A19600E0718A /* service in Resources */ = {isa = PBXBuildFile; fileRef = 96D241BB1982A19600E0718A /* service */; };
 		96F9A8701980088600C44196 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F9A86F1980088600C44196 /* Foundation.framework */; };
 		96F9A8721980088600C44196 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F9A8711980088600C44196 /* CoreGraphics.framework */; };
 		96F9A8741980088600C44196 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F9A8731980088600C44196 /* UIKit.framework */; };
@@ -27,6 +28,9 @@
 		96F9A8A41980088700C44196 /* bible_everydayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F9A8A31980088700C44196 /* bible_everydayTests.m */; };
 		96FFBC9A1981532200FACE2D /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FFBC971981532200FACE2D /* libUMFeedback.a */; };
 		96FFBC9B1981532200FACE2D /* umFeedback.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96FFBC981981532200FACE2D /* umFeedback.bundle */; };
+		96FFBC9F198159DF00FACE2D /* BENote.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FFBC9E198159DF00FACE2D /* BENote.m */; };
+		96FFBCA519815D1000FACE2D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FFBCA419815D1000FACE2D /* libz.dylib */; };
+		96FFBCAB19815EF100FACE2D /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FFBCA919815EF100FACE2D /* libMobClickLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,7 @@
 /* Begin PBXFileReference section */
 		6470E8EC74E241B8A0A64FC4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0E12C38FD3440DB43FE6FE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		96D241BB1982A19600E0718A /* service */ = {isa = PBXFileReference; lastKnownFileType = folder; path = service; sourceTree = "<group>"; };
 		96F9A86C1980088600C44196 /* bible-everyday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bible-everyday.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F9A86F1980088600C44196 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96F9A8711980088600C44196 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +74,11 @@
 		96FFBC971981532200FACE2D /* libUMFeedback.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libUMFeedback.a; path = "bible-everyday/UM/libUMFeedback.a"; sourceTree = "<group>"; };
 		96FFBC981981532200FACE2D /* umFeedback.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = umFeedback.bundle; path = "bible-everyday/UM/umFeedback.bundle"; sourceTree = "<group>"; };
 		96FFBC991981532200FACE2D /* UMFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UMFeedback.h; path = UM/UMFeedback.h; sourceTree = "<group>"; };
+		96FFBC9D198159DF00FACE2D /* BENote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BENote.h; path = model/BENote.h; sourceTree = "<group>"; };
+		96FFBC9E198159DF00FACE2D /* BENote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BENote.m; path = model/BENote.m; sourceTree = "<group>"; };
+		96FFBCA419815D1000FACE2D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		96FFBCA919815EF100FACE2D /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobClickLibrary.a; path = "bible-everyday/UM/libMobClickLibrary.a"; sourceTree = "<group>"; };
+		96FFBCAA19815EF100FACE2D /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobClick.h; path = UM/MobClick.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FFBCA519815D1000FACE2D /* libz.dylib in Frameworks */,
 				96F9A8721980088600C44196 /* CoreGraphics.framework in Frameworks */,
 				96FFBC9A1981532200FACE2D /* libUMFeedback.a in Frameworks */,
 				96F9A8741980088600C44196 /* UIKit.framework in Frameworks */,
 				96F9A8701980088600C44196 /* Foundation.framework in Frameworks */,
+				96FFBCAB19815EF100FACE2D /* libMobClickLibrary.a in Frameworks */,
 				0A2560B7568A48679D26A40E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +132,8 @@
 		96F9A86E1980088600C44196 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96FFBCA919815EF100FACE2D /* libMobClickLibrary.a */,
+				96FFBCA419815D1000FACE2D /* libz.dylib */,
 				96FFBC981981532200FACE2D /* umFeedback.bundle */,
 				96FFBC971981532200FACE2D /* libUMFeedback.a */,
 				96F9A86F1980088600C44196 /* Foundation.framework */,
@@ -134,6 +148,9 @@
 		96F9A8751980088600C44196 /* bible-everyday */ = {
 			isa = PBXGroup;
 			children = (
+				96D241BB1982A19600E0718A /* service */,
+				96FFBC9C1981599500FACE2D /* model */,
+				96FFBCAA19815EF100FACE2D /* MobClick.h */,
 				96FFBC991981532200FACE2D /* UMFeedback.h */,
 				96F9A87E1980088600C44196 /* BEAppDelegate.h */,
 				96F9A87F1980088600C44196 /* BEAppDelegate.m */,
@@ -178,6 +195,15 @@
 				96F9A8A01980088700C44196 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96FFBC9C1981599500FACE2D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				96FFBC9D198159DF00FACE2D /* BENote.h */,
+				96FFBC9E198159DF00FACE2D /* BENote.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D241BC1982A19600E0718A /* service in Resources */,
 				96FFBC9B1981532200FACE2D /* umFeedback.bundle in Resources */,
 				96F9A88F1980088700C44196 /* Main_iPad.storyboard in Resources */,
 				96F9A8911980088700C44196 /* Images.xcassets in Resources */,
@@ -317,6 +344,7 @@
 			files = (
 				96F9A8831980088600C44196 /* BERootViewController.m in Sources */,
 				96F9A8891980088600C44196 /* BEModelController.m in Sources */,
+				96FFBC9F198159DF00FACE2D /* BENote.m in Sources */,
 				96F9A8861980088600C44196 /* BEDataViewController.m in Sources */,
 				96F9A87C1980088600C44196 /* main.m in Sources */,
 				96F9A8801980088600C44196 /* BEAppDelegate.m in Sources */,
@@ -461,6 +489,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/bible-everyday/UM",
+					"$(PROJECT_DIR)/bible-everyday",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -479,6 +508,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/bible-everyday/UM",
+					"$(PROJECT_DIR)/bible-everyday",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
